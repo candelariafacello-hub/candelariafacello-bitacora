@@ -1,0 +1,8 @@
+datos_caja = {
+    "objetoid": [1, 2, 3, 4, 5, 6, 7]
+    "livianez": [1, 0, 1, 1, 1, 0]
+    "rigidez": [blando, rigido, rigido, rigido, medio, medio]
+    "tamaño": [mediano, chico, chico, chico, mediano, chico]
+    "movil":[no, si, no, si, no, no]
+    "peso": [0.15, 0.09, 0.25, 0.02, 0.12, 0.05, 0.25]
+}
