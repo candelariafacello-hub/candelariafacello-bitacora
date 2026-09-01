@@ -1,4 +1,7 @@
 # %%
+import os
+os.getcwd()
+os.chdir("\Users\Candelaria´\OneDrive\Documents\GitHub\candelariafacello-bitacora>")
 from pathlib import Path
 import pandas as pd
 
