@@ -1,3 +1,7 @@
+import os
+os.getcwd()
+##os.chdir("C:\Users\Candelaria´\OneDrive\Documents\GitHub\candelariafacello-bitacora")
+
 from pathlib import Path
 import pandas as pd
 
@@ -6,17 +10,17 @@ BASE_DIR = Path.cwd()
 
 # 2. Construir la ruta relativa de forma segura utilizando el operador /
 # Estructura esperada: tu_proyecto/data/raw/datos.csv
-archivo = "data/imputaciones-y-condenas-a-personas.csv"
-ruta_csv = BASE_DIR / "data" / "imputaciones-y-condenas-a-personas.csv"
+archivo = "imputaciones-y-condenas-a-personas.csv"
+ruta_csv = BASE_DIR / "data" / archivo
 
-ruta_csv = BASE_DIR / "data" / "data/imputaciones-y-condenas-a-personas.csv"
+##ruta_csv = BASE_DIR / "data" / "imputaciones-y-condenas-a-personas.csv"
 
 # 3. Verificar que el archivo realmente existe antes de cargarlo
 if not ruta_csv.exists():
     raise FileNotFoundError(f"No se encontró el archivo en: {ruta_csv}")
 
 # 4. Cargar el archivo CSV
-df = pd.read_csv(ruta_csv)
+df = pd.read_csv(ruta_csv, encoding="latin-1")  # Especificar la codificación si es necesario
 
 # 5. Inspección inicial de los datos
 print(f"--- Archivo cargado exitosamente desde: {ruta_csv.name} ---")
