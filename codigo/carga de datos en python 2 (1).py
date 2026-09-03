@@ -1,7 +1,7 @@
 # %%
 import os
 os.getcwd()
-os.chdir("\Users\Candelaria´\OneDrive\Documents\GitHub\candelariafacello-bitacora>")
+#os.chdir("\\Users\\Candelaria´\\OneDrive\\Documents\\GitHub\\candelariafacello-bitacora")
 from pathlib import Path
 import pandas as pd
 
@@ -11,9 +11,9 @@ BASE_DIR = Path.cwd()
 # 2. Construir la ruta relativa de forma segura utilizando el operador /
 # Estructura esperada: tu_proyecto/data/raw/datos.csv
 archivo = "cantidad_de_residuos_en_la_estacion_de_transferencia_2023.csv"
-ruta_csv = BASE_DIR / "clases" / "clase4" / archivo
+ruta_csv = BASE_DIR / "data"  / archivo
 
-ruta_csv = BASE_DIR / "clases" / "clase4" / "cantidad_de_residuos_en_la_estacion_de_transferencia_2023.csv"
+ruta_csv = BASE_DIR / "data" / "cantidad_de_residuos_en_la_estacion_de_transferencia_2023.csv"
 
 # 3. Verificar que el archivo realmente existe antes de cargarlo
 if not ruta_csv.exists():
