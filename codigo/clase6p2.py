@@ -1,6 +1,6 @@
 import os
 os.getcwd()
-##os.chdir("C:\Users\Candelaria´\OneDrive\Documents\GitHub\candelariafacello-bitacora")
+#os.chdir("C:\Users\Candelaria´\OneDrive\Documents\GitHub\candelariafacello-bitacora")
 
 from pathlib import Path
 import pandas as pd
@@ -11,7 +11,7 @@ BASE_DIR = Path.cwd()
 # 2. Construir la ruta relativa de forma segura utilizando el operador /
 # Estructura esperada: tu_proyecto/data/raw/datos.csv
 archivo = "tablasimulada.csv"
-ruta_csv = BASE_DIR / "data" / archivo
+ruta_csv = BASE_DIR / "candelariafacello-bitacora" / "data" / archivo
 
 ##ruta_csv = BASE_DIR / "data" / "tablasimulada.csv"
 
@@ -34,10 +34,10 @@ df.info()
 df.shape
 
 # 5.2. Filas únicas: detectando la columna que contiene el ID (Equivalente a length(unique(...)))
-df["matricula_letra"].nunique()
+#df["matricula_letra"].nunique()
 # Si df["columna"].nunique() es igual a len(df), esa columna es un ID único
-print("\nValores únicos por columna (Buscar candidatos a ID):")
-print(df.nunique())
+#print("\nValores únicos por columna (Buscar candidatos a ID):")
+#print(df.nunique())
 
 # 5.3 Datos faltantes
 
